@@ -6,21 +6,122 @@
     <title>Jass | Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #070F2B;
+            color: #9290C3;
+        }
+        header {
+            background: linear-gradient(135deg, #1B1A55, #535C91);
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(83, 92, 145, 0.8);
+            padding: 10px;
+            backdrop-filter: blur(10px);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #9290C3;
+        }
+        section {
             text-align: center;
             padding: 50px;
-            background-color: #f4f4f4;
+            transition: transform 0.5s ease-in-out;
         }
-        h1 {
-            color: #333;
+        .container {
+            max-width: 900px;
+            margin: auto;
         }
-        p {
-            color: #666;
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #1B1A55, #535C91);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 10px;
+            transition: background 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background: #9290C3;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+        .project-card {
+            background: rgba(27, 26, 85, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            max-width: 600px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Stay tuned! Exciting things are coming soon.</p>
+    <header>
+        Jass | Portfolio
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <img src="img/profile.jpg" alt="Jass Profile" class="profile-img">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Creative Video Editor | AI Developer | Musician</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hi, I'm Jass! A passionate video editor, AI developer, and musician. I love bringing creativity to life through my work. Check out my projects to see what I do!</p>
+    </section>
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Coming soon! Stay tuned for exciting updates.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Coming soon! Stay tuned for exciting updates.</p>
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>Let's connect! You can reach me via:</p>
+        <p>Email: 1jaskaranofficial@gmail.com</p>
+        <p>Instagram: @jaskrninlove</p>
+    </section>
 </body>
 </html>
